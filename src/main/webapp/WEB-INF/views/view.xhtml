@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<f:view xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+	<h:head />
+	<h:body>
+		<h:form id="form">
+			<p:growl id="msgs" showDetail="true" />
+
+			<h3 style="margin-top: 0">Basic</h3>
+			<p:accordionPanel>
+				<p:tab title="Godfather Part I">
+					<h:panelGrid columns="2" cellpadding="10">
+						<img width="100" height="100" src="https://img-s1.onedio.com/id-552e2f8087af885c085cf11a/rev-0/raw/s-9bbf689aac3c84ba1c3ddcbc49ebe2429b9df1ca.jpg"/> 
+						<h:outputText value="The story begins as Don Vito Corleone..." />
+					</h:panelGrid>
+				</p:tab>
+				<p:tab title="Godfather Part II">
+					<h:panelGrid columns="2" cellpadding="10">
+								<img width="100" height="100" src="https://img-s1.onedio.com/id-552e2f8087af885c085cf11a/rev-0/raw/s-9bbf689aac3c84ba1c3ddcbc49ebe2429b9df1ca.jpg"/> 
+						<h:outputText value="Francis Ford Coppola's legendary..." />
+					</h:panelGrid>
+				</p:tab>
+				<p:tab title="Godfather Part III">
+					<h:panelGrid columns="2" cellpadding="10">
+						<img width="100" height="100"
+							src="https://img-s1.onedio.com/id-552e2f8087af885c085cf11a/rev-0/raw/s-9bbf689aac3c84ba1c3ddcbc49ebe2429b9df1ca.jpg" />
+						<h:outputText value="After a break of more than 15 years..." />
+					</h:panelGrid>
+				</p:tab>
+			</p:accordionPanel>
+			
+			<div style="margin-top: 5%;">
+			
+			</div>
+			
+			<ui:include src="/WEB-INF/views/datatable.xhtml"></ui:include>
+			
+		</h:form>
+	</h:body>
+</f:view>
